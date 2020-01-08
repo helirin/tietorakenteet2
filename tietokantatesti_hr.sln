@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tietokantatesti_hr", "tietokantatesti_hr.csproj", "{87BECD7C-0E70-45E1-8019-8194E620D9DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87BECD7C-0E70-45E1-8019-8194E620D9DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87BECD7C-0E70-45E1-8019-8194E620D9DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87BECD7C-0E70-45E1-8019-8194E620D9DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87BECD7C-0E70-45E1-8019-8194E620D9DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F36451E8-8BEE-490C-9557-C89B7E605A43}
+	EndGlobalSection
+EndGlobal
