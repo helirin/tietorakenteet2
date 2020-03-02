@@ -5,20 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
 using System.IO;
-/* Tallennetaan vaalit-tiedosto tietokantaan ja haetaan sieltä tietoja valtuustoon valituista henkilöistä*/
+/* Tallennetaan vaalit-tiedoston tiedot tietokantaan ja haetaan sieltä tietoja valtuustoon valituista henkilöistä*/
 namespace tietokantatesti_hr
 {
     class Program
     {
         static void Main(string[] args)
         {
-             //vaalit.txt tiedoston sisällön tallennus tietokantaan tehtiin ensimmäisenä
+             //vaalit.txt tiedoston sisällön tallennus tietokantaan tehdään ensimmäisenä
              //sitä ei voi tehdä kuin yhden kerran, mutta ohjelma ei kaadu uuteen yritykseen
-            Db_tallennus tallennus = new Db_tallennus();    //luodaan olio talennus
+            Db_tallennus tallennus = new Db_tallennus();    //luodaan olio tallennus
             tallennus.Tallenna();                           //kutsutaan metodia tallenna
             
             Puolue puolue = new Puolue();
-            // tallentaan yksittäisen puolueen yhteenlasketut äänet tietokantaan
+            // tallennetaan yksittäisen puolueen yhteenlasketut äänet tietokantaan
             puolue.PuolueAanet();
             //järjestetään ehdokkaat äänimäärän mukaan
             puolue.Jarjesta();
@@ -26,7 +26,7 @@ namespace tietokantatesti_hr
             puolue.TallennaJarjestys();
 
             Valitut valitut = new Valitut();
-            //tulostetaan valitut ehdokkaat vertailuluvun mukaisessa järjestyksessa
+            //tulostetaan valitut ehdokkaat vertailuluvun mukaisessa järjestyksessä
             valitut.TulostaValitut();
             //tulostetaan valitut ehdokkaat puolueittain
             valitut.TulostaPuolueittain();
